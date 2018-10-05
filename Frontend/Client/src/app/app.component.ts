@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Card } from './models/card.model';
 import { OfferingService } from './offering.service';
-import { UserService } from './user-service.service';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'app-root',
