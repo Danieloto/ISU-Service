@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
 import { Card } from './models/card.model';
 import { OfferingService } from './offering.service';
+<<<<<<< HEAD
 import { UserService } from './user.service';
+=======
+
+>>>>>>> 84d87d761a488429c9f339113f6146e5a6f036eb
 
 @Component({
   selector: 'app-root',
@@ -14,14 +18,4 @@ export class AppComponent {
   /**
    *
    */
-  constructor(private userService: UserService) { }
-  
-  Get(): any {
-    this.asdf = this.userService.GetAllUsers();
-  }
-
-  GetSpecific(): any {
-    let id = 1;
-    this.userService.GetSpecificUser(id);
-  }
 }
