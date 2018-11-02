@@ -5,3 +5,10 @@ export interface User {
     PasswordHash: string;
     PasswordSalt: string;
 }
+
+export interface CheckUser {
+    Name: string;
+    PasswordHash: string;
+    PasswordSalt: string;
+}
+

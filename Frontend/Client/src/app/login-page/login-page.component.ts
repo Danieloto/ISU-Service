@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { User, CheckUser } from '../models/user';
+
+
 
 @Component({
   selector: 'app-login-page',
@@ -7,12 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
-  username: String;
-  password: String;
+  Email: String;
+  Password: String;
   constructor() {}
 
   ngOnInit() {
 
   }
-}
 
+    Submit(form: any): void {
+      console.log(form);
+      const check: CheckUser = {
+        Email: form.Email,
+        Password: form.Password,
+      };
+  }
+}
