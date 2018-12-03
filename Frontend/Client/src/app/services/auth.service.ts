@@ -7,7 +7,7 @@ import { ApiUser } from '../models/user.model';
   providedIn: 'root'
 })
 export class AuthService {
-  private url = 'http://proj309-win12.misc.iastate.edu/';
+  private url = 'http://proj309-win12.misc.iastate.edu/api/auth';
   constructor(private http: HttpClient) { }
 
   async Login(user: ApiUser): Promise<boolean> {

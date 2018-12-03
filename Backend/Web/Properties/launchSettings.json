@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://proj309-win12.misc.iastate.edu/",
+      "applicationUrl": "http://localhost:53902/",
       "sslPort": 0
     }
   },
@@ -21,7 +21,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://proj309-win12.misc.iastate.edu/"
+      "applicationUrl": "http://localhost:53903/"
     }
   }
 }
