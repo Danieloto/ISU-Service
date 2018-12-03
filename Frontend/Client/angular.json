@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "C:/Users/jackc/Documents/309/SB_3_IsuService/Backend/Web/wwwroot",
+            "outputPath": "C:/Users/jackc/OneDrive/Desktop/stuff",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",

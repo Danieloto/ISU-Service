@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  private url = 'http://localhost:53902/api/user';
+  private url = 'http://proj309-win12.misc.iastate.edu/';
 
   constructor(private http: HttpClient) { }
 

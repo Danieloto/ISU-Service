@@ -9,7 +9,7 @@ import { RequestDTO } from '../models/request.model';
 })
 export class OfferingService {
 
-  private url = 'http://localhost:53902/api/offering';
+  private url = 'http://proj309-win12.misc.iastate.edu/';
 
   constructor(private http: HttpClient) { }
 
