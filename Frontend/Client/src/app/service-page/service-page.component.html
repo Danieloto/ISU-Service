@@ -1,0 +1,29 @@
+<div style="border:1px solid black; padding: 15px; height: 80vh;">
+<div *ngIf="card != null">
+  <div class="row">
+    <div class="col-6">
+      <h1>{{card.Title}}</h1>
+      <h6>{{card.Description}}</h6>
+      <div class="inline-header">
+        <h5>Location:</h5><span>{{card.Location}}</span>
+      </div>
+    </div>
+    <div class="col-6" *ngIf="user">
+      <div class="inline-header">
+        <h5>Posted by: </h5><span>{{user.Name}}</span>
+      </div>
+      <div class="inline-header">
+        <h5>On: </h5><span>{{card.PostDate | date}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+        <h6><img src="{{card.ImageURL}}" style="width: 90%"/></h6>
+    </div>
+    <div class="col-6">
+      <div><button class="align-self-end btn btn-success button1" (click)="Request()">REQUEST</button></div>
+    </div>
+  </div>
+</div>
+</div>

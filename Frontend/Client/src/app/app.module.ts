@@ -14,6 +14,7 @@ import { RegisterComponent } from './register/register.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import { ProfilePicFormComponent } from './profile-pic-form/profile-pic-form.component';
 import { CreateServiceComponent } from './create-service/create-service.component';
+import { ServicePageComponent } from './service-page/service-page.component';
 import { ChatComponent } from './chat/chat.component';
 import { ImageOfTheDayComponent } from './image-of-the-day/image-of-the-day.component';
 
@@ -24,6 +25,7 @@ const appRoutes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'profile/:id', component: UserPageComponent },
   { path: 'create', component: CreateServiceComponent },
+  { path: 'service/:id', component: ServicePageComponent },
   { path: 'chat', component: ChatComponent}
 ];
 
@@ -40,6 +42,7 @@ const appRoutes: Routes = [
     ChatComponent,
     CreateServiceComponent,
     ImageOfTheDayComponent,
+    ServicePageComponent
   ],
   imports: [
     BrowserModule,
