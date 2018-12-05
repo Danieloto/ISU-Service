@@ -1,9 +1,9 @@
-export class ChatMessage {
+export interface ChatMessage {
     UserID: number;
     Content: string;
 }
 
-export class ServerChatMessage {
+export interface ServerChatMessage {
     userID: number;
     content: string;
 }
