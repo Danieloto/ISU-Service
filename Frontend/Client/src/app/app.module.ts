@@ -16,6 +16,7 @@ import { ProfilePicFormComponent } from './profile-pic-form/profile-pic-form.com
 import { CreateServiceComponent } from './create-service/create-service.component';
 import { ServicePageComponent } from './service-page/service-page.component';
 import { ChatComponent } from './chat/chat.component';
+import { ImageOfTheDayComponent } from './image-of-the-day/image-of-the-day.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
     ProfilePicFormComponent,
     ChatComponent,
     CreateServiceComponent,
-    ServicePageComponent,
+    ImageOfTheDayComponent,
+    ServicePageComponent
   ],
   imports: [
     BrowserModule,
