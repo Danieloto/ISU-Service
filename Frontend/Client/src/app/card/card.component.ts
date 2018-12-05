@@ -5,6 +5,7 @@ import { UserService } from '../services/user.service';
 import { User } from '../models/user.model';
 import { OfferingService } from '../services/offering.service';
 import { RequestDTO } from '../models/request.model';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-card',
