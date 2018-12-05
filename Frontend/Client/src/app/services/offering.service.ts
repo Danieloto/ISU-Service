@@ -9,9 +9,18 @@ import { RequestDTO } from '../models/request.model';
 })
 export class OfferingService {
 
+<<<<<<< HEAD
   private url = 'http://proj309-win12.misc.iastate.edu/api/offering';
+=======
+
+  private url = 'http://localhost:53902/api/offering';
+>>>>>>> a646cd7094114c05ddb9320f7eb4f5c7ba607474
 
   constructor(private http: HttpClient) { }
+
+  GetRequestsByUser(userId: number): any {
+    return this.http.get<Request[]>(this.url + '/get-requests-by-user/' + userId);
+  }
 
   GetOfferings(): Observable<Offering[]> {
     return this.http.get<Offering[]>(this.url);

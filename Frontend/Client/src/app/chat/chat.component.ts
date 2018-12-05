@@ -32,7 +32,7 @@ export class ChatComponent implements OnInit {
   }
 
   private InitializeSocketConnection(): void {
-    this.hubConnection = new HubConnectionBuilder().withUrl('http://localhost:53902/chat').build();
+    this.hubConnection = new HubConnectionBuilder().withUrl('http://proj309-win12.misc.iastate.edu/chat').build();
     this.hubConnection
       .start()
       .then(() => console.log('Connection started!'))
